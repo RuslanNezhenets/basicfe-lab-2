@@ -1,0 +1,72 @@
+// ======= Завдання 1 ======
+
+table, th, td{
+	border: 1px solid black;
+  	border-collapse: collapse;
+}
+
+td{
+	padding: 5px;
+}
+
+.table{
+	width: 70%;
+	height: 150px;
+}
+
+.first_color{
+	background-color: #f5f575;
+	color: #FF0000;
+	font-weight: bold;
+
+	&:hover{
+		background-color: #758f8f;
+	}
+}
+
+.second_color{
+	background-color: #758f8f;
+	color: #0000FF;
+	font-weight: bold;
+
+	&:hover{
+		background-color: #f5f575;
+	}
+}
+
+// ======= Завдання 2 ======
+
+.position{
+	position: relative;
+}
+
+.circle {
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;
+	border: 2px solid black;
+	opacity: 60%;
+
+	&.red{ background-color: red; }
+	&.blue{	background-color: blue; }
+	&.green{ background-color: green; }
+
+	&-position{
+		&.red{
+			margin-left: 100px;
+		}
+		&.blue{
+			margin-top: -35px;
+			margin-left: 60px;
+		}
+		&.green{
+			margin-top: -105px;
+			margin-left: 140px;
+		}
+	}
+	&-transform{
+		&.red{ transform: translate(100px); }
+		&.blue{ transform: translate(60px, -35px); }
+		&.green{ transform: translate(140px, -140px); }
+	}
+}
